@@ -43,6 +43,16 @@ pipeline {
                         echo "Service: ${SERVICE}"
                         echo "TAG: ${TAG}"
                         echo "REPOSITORY: ${REPOSITORY}"
+                        sh '''
+                            git config user.email contact@feketegabor.com
+                            git config user.name gaborfekete85
+                            cat values-${ENVIRONMENT}.yaml
+                            sed -i 's+${REPOSITORY}/${SERVICE}.*+${REPOSITORY}/${SERVICE}:${TAG}+g' values-${ENVIRONMENT}.yaml
+                            cat values-${ENVIRONMENT}.yaml
+                            git add .
+                            git commit -m 'Done by Jenkins Job changemanifest: ${SERVICE}:${TAG} on ${ENVIRONMENT}
+                            git push https://${GIT_USERNAME}:${GIT_PASSWORD}@github.com/${GIT_USERNAME}/devops-manifest.git HEAD:master
+                        '''
 
                         //def encodedPassword = URLEncoder.encode("$GIT_PASSWORD",'UTF-8')
                         //sh "cd authorization-service"
