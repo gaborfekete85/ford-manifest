@@ -1,5 +1,5 @@
 application: 
-  host: dev.ford.com
+  host: ford-dev.gleeze.com
 
 ingress: 
   api: 
@@ -16,7 +16,7 @@ service:
     serviceName: frontend-service
     port: 8301
     portType: ClusterIP
-    image: gabendockerzone/frontend:547d3a0
+    image: gabendockerzone/frontend:fdc5ff9
     componentSelector: web
   postgres: 
     serviceName: postgres-service
