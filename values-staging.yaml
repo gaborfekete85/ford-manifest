@@ -1,15 +1,15 @@
 application: 
-  host: https://ford.gleeze.com
+  host: dev.ford.com
 
 ingress: 
   api: 
-    fullName: nginx-ingress-api-staging
+    fullName: nginx-ingress-api-dev
   oauth2: 
-    fullName: nginx-ingress-oauth2-staging
+    fullName: nginx-ingress-oauth2-dev
   frontend: 
-    fullName: nginx-ingress-frontend-staging
+    fullName: nginx-ingress-frontend-dev
   frontend_oauth: 
-    fullName: nginx-ingress-frontend-oauth-staging
+    fullName: nginx-ingress-frontend-oauth-dev
 
 service:
   frontend: 
