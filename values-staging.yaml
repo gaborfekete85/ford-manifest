@@ -1,15 +1,15 @@
 application: 
-  host: dev.ford.com
+  host: staging.ford.com
 
 ingress: 
   api: 
-    fullName: nginx-ingress-api-dev
+    fullName: nginx-ingress-api-staging
   oauth2: 
-    fullName: nginx-ingress-oauth2-dev
+    fullName: nginx-ingress-oauth2-staging
   frontend: 
-    fullName: nginx-ingress-frontend-dev
+    fullName: nginx-ingress-frontend-staging
   frontend_oauth: 
-    fullName: nginx-ingress-frontend-oauth-dev
+    fullName: nginx-ingress-frontend-oauth-staging
 
 service:
   frontend: 
