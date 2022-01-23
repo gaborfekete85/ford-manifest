@@ -35,6 +35,7 @@ pipeline {
     }
     stages {
             stage('Update GIT') {
+            steps {
             script {
                 catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
                     withCredentials([usernamePassword(credentialsId: 'ca0bdb6b-4470-45f4-baef-259619495ab8', passwordVariable: 'GIT_PASSWORD', usernameVariable: 'GIT_USERNAME')]) {
@@ -56,6 +57,7 @@ pipeline {
                         //sh "git push https://${GIT_USERNAME}:${GIT_PASSWORD}@github.com/${GIT_USERNAME}/devops-manifest.git HEAD:master"
       }
     }
+  }
   }
 }
     }
