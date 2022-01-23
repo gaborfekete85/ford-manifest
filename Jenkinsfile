@@ -50,7 +50,7 @@ pipeline {
                             sed -i 's+${REPOSITORY}/${SERVICE}.*+${REPOSITORY}/${SERVICE}:${TAG}+g' values-${ENVIRONMENT}.yaml
                             cat values-${ENVIRONMENT}.yaml
                             git add .
-                            git commit -m 'Done by Jenkins Job changemanifest: ${SERVICE}:${TAG} on ${ENVIRONMENT}
+                            git commit -m 'Done by Jenkins Job changemanifest: ${SERVICE}:${TAG} on ${ENVIRONMENT}'
                             git push https://${GIT_USERNAME}:${GIT_PASSWORD}@github.com/${GIT_USERNAME}/devops-manifest.git HEAD:master
                         """
 
