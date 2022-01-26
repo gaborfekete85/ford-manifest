@@ -16,7 +16,7 @@ service:
     serviceName: frontend-service
     port: 8301
     portType: ClusterIP
-    image: gabendockerzone/frontend:d9a5a9d
+    image: gabendockerzone/frontend:2265502
     componentSelector: web
   postgres: 
     serviceName: postgres-service
