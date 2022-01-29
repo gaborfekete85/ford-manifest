@@ -49,3 +49,10 @@ spec:
               name: inquiry-service
               port: 
                 number: 8404
+        - path: /api/(fcm|$)(.*)
+          pathType: ImplementationSpecific
+          backend:
+            service: 
+              name: inquiry-service
+              port: 
+                number: 8404                
