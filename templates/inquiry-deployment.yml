@@ -28,3 +28,5 @@ spec:
               value: "http://zipkin-collector:9411"
             - name: TEST_MODE_ENABLED
               value: 'false'
+            - name: "AUTH_SERVICE_ENDPOINT"
+              value: "http://authorization-service:8302/api/auth"
