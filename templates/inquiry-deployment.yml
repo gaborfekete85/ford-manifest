@@ -16,7 +16,7 @@ spec:
         - name: inquiry-service
           image: "{{ .Values.service.inquiry.image }}"
           ports:
-            - containerPort: 8304
+            - containerPort: {{ .Values.service.inquiry.port }}
           env:
             - name: DATASOURCE_URL
               value: "jdbc:postgresql://postgres-postgresql.managed/postgres?currentSchema=ford_inquiry"

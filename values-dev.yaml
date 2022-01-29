@@ -38,7 +38,7 @@ service:
     componentSelector: server-inquiry
   inquiry: 
     serviceName: inquiry-service
-    port: 8304
+    port: 8404
     portType: ClusterIP
     image: gabendockerzone/inquiry-service:29b4879
     componentSelector: server-inquiry

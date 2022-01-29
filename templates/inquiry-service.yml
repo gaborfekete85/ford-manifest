@@ -7,5 +7,5 @@ spec:
   selector:
     component: server-inquiry
   ports:
-    - port: 8304
-      targetPort: 8304
+    - port: {{ .Values.service.inquiry.port }}
+      targetPort: {{ .Values.service.inquiry.port }}
