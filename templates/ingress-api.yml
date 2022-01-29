@@ -34,18 +34,18 @@ spec:
             service: 
               name: inquiry-service
               port: 
-                number: 8304
+                number: 8404
         - path: /api/(salon|$)(.*)
           pathType: ImplementationSpecific
           backend:
             service: 
               name: inquiry-service
               port: 
-                number: 8304
+                number: 8404
         - path: /api/(service-type|$)(.*)
           pathType: ImplementationSpecific
           backend:
             service: 
               name: inquiry-service
               port: 
-                number: 8304
+                number: 8404
