@@ -1,22 +1,22 @@
 application: 
-  host: dev.ford.com
+  host: ford.rewura.com
 
 ingress: 
   api: 
-    fullName: nginx-ingress-api-dev
+    fullName: nginx-ingress-api-prod
   oauth2: 
-    fullName: nginx-ingress-oauth2-dev
+    fullName: nginx-ingress-oauth2-prod
   frontend: 
-    fullName: nginx-ingress-frontend-dev
+    fullName: nginx-ingress-frontend-prod
   frontend_oauth: 
-    fullName: nginx-ingress-frontend-oauth-dev
+    fullName: nginx-ingress-frontend-oauth-prod
 
 service:
   frontend: 
     serviceName: frontend-service
     port: 8301
     portType: ClusterIP
-    image: gabendockerzone/frontend:fdc5ff9
+    image: gabendockerzone/frontend:d9a5a9d
     componentSelector: web
   postgres: 
     serviceName: postgres-service
