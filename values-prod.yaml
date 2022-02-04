@@ -16,7 +16,7 @@ service:
     serviceName: frontend-service
     port: 8301
     portType: ClusterIP
-    image: gabendockerzone/frontend:d9a5a9d
+    image: gabendockerzone/frontend:aabb6a6
     componentSelector: web
   postgres: 
     serviceName: postgres-service
@@ -38,9 +38,9 @@ service:
     componentSelector: server-inquiry
   inquiry: 
     serviceName: inquiry-service
-    port: 8304
+    port: 8404
     portType: ClusterIP
-    image: gabendockerzone/inquiry-service:fdc5ff9
+    image: gabendockerzone/inquiry-service:aabb6a6
     componentSelector: server-inquiry
 
 autoscaling:
