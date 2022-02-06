@@ -40,7 +40,7 @@ service:
     serviceName: inquiry-service
     port: 8404
     portType: ClusterIP
-    image: gabendockerzone/inquiry-service:aabb6a6
+    image: gabendockerzone/inquiry-service:8a588ba
     componentSelector: server-inquiry
 
 autoscaling:
