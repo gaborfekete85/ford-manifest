@@ -25,4 +25,4 @@ spec:
             - name: DB_PLATFORM
               value: mongo
             - name: DB_URL_PORT
-              value: "{{ .Values.service.appointment.port }}"
+              value: "mongo"
