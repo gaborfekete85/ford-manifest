@@ -6,11 +6,11 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      component: server
+      component: appointment-server
   template:
     metadata:
       labels:
-        component: server
+        component: appointment-server
     spec:
       containers:
         - name: appointment-service
