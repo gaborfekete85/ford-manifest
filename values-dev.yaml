@@ -12,6 +12,11 @@ ingress:
     fullName: nginx-ingress-frontend-oauth-dev
 
 service:
+  appointment: 
+    serviceName: rewura-appointment-service
+    port: 8305
+    portType: ClusterIP
+    image: gabendockerzone/appointment-service:d0498ea
   frontend: 
     serviceName: frontend-service
     port: 8301
