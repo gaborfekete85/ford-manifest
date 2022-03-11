@@ -23,6 +23,6 @@ spec:
             - name: JWT_KEY
               value: b723306f617f4dc4b0edeae2555729d6
             - name: PORT
-              value: 8305
+              value:8305
             - name: DB_PLATFORM
               value: mongo
