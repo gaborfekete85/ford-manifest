@@ -28,7 +28,8 @@ pipeline {
             ], 'description': 'Target environment. This envs manifest ( values.yaml ) will be updated')
         choice(name: 'SERVICE', 
             choices: ["frontend", 
-                      "inquiry-service"
+                      "inquiry-service",
+                      "appointment-service"
             ], 'description': 'Target environment. This envs manifest ( values.yaml ) will be updated')
         string(name: 'TAG', defaultValue: 'latest', description: 'The new docker image tag. ')
         string(name: 'REPOSITORY', defaultValue: 'gabendockerzone', description: 'The docker repository where the images are loaded. ')
