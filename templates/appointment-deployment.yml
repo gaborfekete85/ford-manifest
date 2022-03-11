@@ -22,3 +22,5 @@ spec:
               value: "mongodb://root:HgtDPZDW2v@mongo-mongodb.managed:27017"
             - name: JWT_KEY
               value: b723306f617f4dc4b0edeae2555729d6
+            - name: DB_PLATFORM
+              value: mongo
