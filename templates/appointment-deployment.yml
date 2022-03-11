@@ -24,5 +24,5 @@ spec:
               value: b723306f617f4dc4b0edeae2555729d6
             - name: DB_PLATFORM
               value: mongo
-            - name: DB_PLATFORM_2
+            - name: PORT
               value: "mongo8305"
