@@ -25,4 +25,4 @@ spec:
             - name: DB_PLATFORM
               value: mongo
             - name: PORT
-              value: "m8305"
+              value: "8305"
