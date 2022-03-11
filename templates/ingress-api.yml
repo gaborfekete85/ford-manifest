@@ -63,3 +63,31 @@ spec:
               name: appointment-service
               port: 
                 number: 8305
+        - path: /api/(vehicles|$)(.*)
+          pathType: ImplementationSpecific
+          backend:
+            service: 
+              name: appointment-service
+              port: 
+                number: 8305
+        - path: /api/(garage|$)(.*)
+          pathType: ImplementationSpecific
+          backend:
+            service: 
+              name: appointment-service
+              port: 
+                number: 8305
+        - path: /api/(company|$)(.*)
+          pathType: ImplementationSpecific
+          backend:
+            service: 
+              name: appointment-service
+              port: 
+                number: 8305
+        - path: /api/(booking|$)(.*)
+          pathType: ImplementationSpecific
+          backend:
+            service: 
+              name: appointment-service
+              port: 
+                number: 8305
