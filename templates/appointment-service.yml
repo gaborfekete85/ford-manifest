@@ -5,7 +5,7 @@ metadata:
 spec:
   type: ClusterIP
   selector:
-    component: server
+    component: appointment-server
   ports:
     - port: 8305
       targetPort: 8305
