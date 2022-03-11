@@ -25,4 +25,4 @@ spec:
             - name: DB_PLATFORM
               value: mongo
             - name: PORT
-              value: {{ .Values.service.appointment.port }}
+              value: "{{ .Values.service.appointment.port }}"
