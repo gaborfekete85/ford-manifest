@@ -91,3 +91,10 @@ spec:
               name: appointment-service
               port: 
                 number: 8305
+        - path: /api/(manufactures|$)(.*)
+          pathType: ImplementationSpecific
+          backend:
+            service: 
+              name: appointment-service
+              port: 
+                number: 8305
