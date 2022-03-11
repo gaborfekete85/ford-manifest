@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: appointment-service
+spec:
+  type: ClusterIP
+  selector:
+    component: server
+  ports:
+    - port: 8305
+      targetPort: 8305

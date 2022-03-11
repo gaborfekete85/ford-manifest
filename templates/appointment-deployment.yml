@@ -1,0 +1,45 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: appointment-service
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      component: server
+  template:
+    metadata:
+      labels:
+        component: server
+    spec:
+      containers:
+        - name: appointment-service
+          image: "{{ .Values.service.appointment.image }}"
+          ports:
+            - containerPort: 8305
+          env:
+            - name: DATASOURCE_URL
+              value: "jdbc:postgresql://postgres-postgresql.managed/postgres?currentSchema=ford_auth"
+            - name: DATASOURCE_USER
+              value: postgres
+            - name: DATASOURCE_PASSWORD
+              value: postgres
+            - name: ZIPKIN_BASE_URL
+              value: "http://zipkin-collector:9411"
+            - name: AUTH_SERVICE_ENDPOINT
+              value: http://authorization-service:8100/api
+            - name: GOOGLE_CLIENT_ID
+              value: 912050282042-ais7fbu2uns1u3go9eoe6l8iaiv3iruo.apps.googleusercontent.com
+            - name: GOOGLE_CLIENT_SECRET
+              value: 5Ex-92yP7Q1YU_TmgtVXiYR5
+            - name: FACEBOOK_CLIENT_ID
+              value: '1670650839666976'
+            - name: FACEBOOK_CLIENT_SECRET
+              value: 97e1e2cfb217a1730563ad1361bda51c
+            - name: BASE_URL
+              value: https://ford.rewura.com
+            #- name: PGPASSWORD
+            #  valueFrom:
+            #    secretKeyRef:
+            #      name: pgpassword
+            #      key: PGPASSWORD
