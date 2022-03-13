@@ -24,7 +24,8 @@ pipeline {
     parameters {
         choice(name: 'ENVIRONMENT', 
             choices: ["dev", 
-                      "staging"
+                      "staging",
+                      "prod"
             ], 'description': 'Target environment. This envs manifest ( values.yaml ) will be updated')
         choice(name: 'SERVICE', 
             choices: ["frontend", 
