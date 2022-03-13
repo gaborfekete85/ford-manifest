@@ -16,7 +16,7 @@ service:
     serviceName: rewura-appointment-service
     port: 8305
     portType: ClusterIP
-    image: gabendockerzone/appointment-service:da51957
+    image: gabendockerzone/appointment-service:88e59a1
   frontend: 
     serviceName: frontend-service
     port: 8301
