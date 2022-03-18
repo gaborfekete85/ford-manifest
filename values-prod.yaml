@@ -16,7 +16,7 @@ service:
     serviceName: appointment-service
     port: 8305
     portType: ClusterIP
-    image: gabendockerzone/appointment-service:b26847a
+    image: gabendockerzone/appointment-service:b02abf8
     componentSelector: appointment-server
   frontend: 
     serviceName: frontend-service
