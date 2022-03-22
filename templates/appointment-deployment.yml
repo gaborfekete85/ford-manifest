@@ -29,4 +29,4 @@ spec:
             - name: NOTIFICATION_ENDPOINT
               value: "https://exp.host/--/api/v2/push/send"
             - name: AUTH_SERVICE_ENDPOINT
-              value: "http://authorization-service/api/auth"
+              value: "http://authorization-service:8302/api/auth"
