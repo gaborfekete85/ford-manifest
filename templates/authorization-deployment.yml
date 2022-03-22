@@ -38,6 +38,8 @@ spec:
               value: 97e1e2cfb217a1730563ad1361bda51c
             - name: BASE_URL
               value: https://ford.rewura.com
+            - name: JWT_KEY
+              value: b723306f617f4dc4b0edeae2555729d6
             #- name: PGPASSWORD
             #  valueFrom:
             #    secretKeyRef:
