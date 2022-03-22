@@ -26,3 +26,7 @@ spec:
               value: mongo
             - name: PORT
               value: "8305"
+            - name: NOTIFICATION_ENDPOINT
+              value: "https://exp.host/--/api/v2/push/send"
+            - name: AUTH_SERVICE_ENDPOINT
+              value: "http://authorization-service/api/auth"
